@@ -1,20 +1,25 @@
 // JavaScript Document
 
-prompt("Enter in a value from 1 to 100");
-
-for (var i = 1; i < 101; i++) {
+function fizzBuzzInput() {
+   var inputArea = document.getElementById("fizzBuzzInput");
+   alert("working");
+   
+   for (var i = 1; i <= 100; i++) {
 	if (i%3  === 0 ){ 
 		if (i%15 === 0){
-		console.log('fizzbuzz');
-		}
+			$(".answerArea").append("<p>fizz buzz</p>");
+			}
 		else{
-			console.log('fizz');
+			$(".answerArea").append("<p>fizz</p>");
 			}
 	}
 	else if (i%5 === 0){ 
-	console.log('buzz');
-	}
+		$(".answerArea").append("<p>buzz</p>");
+		}
 	else{
-		console.log(i);
+		$(".answerArea").append("<p>" + i + "</p>");
 		}
 }
+
+};
+

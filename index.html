@@ -5,8 +5,42 @@
 <title>FizzBuzz</title>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="script.js"></script>
+<style>
+
+.formArea {
+	width: 270px;
+	margin: 50px auto;
+	background: teal;
+	color: white;
+	padding: 20px;
+	border-radius: 5px;
+	font-family: helvetica;
+}
+.formArea input {
+	width: 60%;
+	margin: 20px 0 5px;
+	padding: 8px;
+}
+button#fizzBuzzSubmit {
+	background: white;
+	border: none;
+	padding: 10px 20px;
+	font-family: helvetica;
+	font-size: 12px;
+}
+
+</style>
 </head>
 
 <body>
+
+<div class="wrapper">
+	<div class="formArea">
+        Enter in a number from 1 to 100 below<br />
+        <input id="fizzBuzzInput" /> <button value="submit" id="fizzBuzzSubmit" onclick="fizzBuzzInput()">Submit</button>
+    </div>
+    <div class="answerArea">
+    </div>
+</div>
 </body>
 </html>
